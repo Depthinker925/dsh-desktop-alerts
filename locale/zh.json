@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Windows 桌面提醒",
+    "description": "需要你回答问题、确认权限或任务跑完时，在屏幕右下角弹出提醒卡片，点击即可切回 DSH。",
+    "detail": "docs/DETAIL.md"
+  }
+}

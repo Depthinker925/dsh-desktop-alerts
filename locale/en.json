@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Windows desktop alerts",
+    "description": "Pops a card in the corner of the screen when DSH needs an answer, waits for a permission decision, or finishes a turn. Click it to jump back to DSH.",
+    "detail": "docs/DETAIL.md"
+  }
+}
