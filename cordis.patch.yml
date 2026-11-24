@@ -1,9 +1,9 @@
-# dsh-windows-notify — bundle patch layer.
+# dsh-desktop-alerts — bundle patch layer.
 #
 # The Plugin Manager writes this row when the bundle is installed. It is kept in
 # the repository so the bundle can also be referenced from a profile patch layer
 # by hand. `config` is optional; every key documented in README.md can go here.
 - insert:
     - id: windows-notify
-      name: dsh-windows-notify
+      name: dsh-desktop-alerts
       config: {}

@@ -1,6 +1,6 @@
-# dsh-windows-notify
+# dsh-desktop-alerts
 
-[![Listed on dsh-plugin.org](https://dsh-plugin.org/badges/listed.svg)](https://dsh-plugin.org/plugins/depth/dsh-windows-notify)
+[![Listed on dsh-plugin.org](https://dsh-plugin.org/badges/listed.svg)](https://dsh-plugin.org/plugins/depthinker925/dsh-desktop-alerts)
 
 **DeepSeek Harness 的 Windows 桌面提醒插件。** 当 Agent 需要你回答问题、等待权限确认，或者一个回合跑完时，屏幕角落会弹出一张提醒卡片——不用一直盯着 DSH 窗口。点击卡片即可把 DSH 切回前台。
 
@@ -21,14 +21,14 @@ DSH 自己不会把窗口抢到前台，声音提示又很容易被忽略。这�
 ## 安装
 
 ```bash
-dsh plugin --profile web add dsh-windows-notify
+dsh plugin --profile web add dsh-desktop-alerts
 ```
 
 也可以：
 
 - **插件市场**：DSH 内打开「插件」，在插件中心搜索 `Windows 桌面提醒` 安装；
 - **本地目录**：在「插件」页面选择「从本地目录安装」，指向本仓库根目录（开发时推荐，安装的是软链接，改完代码重启即生效）；
-- **GitHub 直装**：`dsh plugin --profile web add github:<owner>/dsh-windows-notify`。
+- **GitHub 直装**：`dsh plugin --profile web add github:depthinker925/dsh-desktop-alerts`。
 
 安装后无需重启桌面端即可生效（插件管理会重新加载层）。
 
@@ -49,7 +49,7 @@ dsh plugin --profile web add dsh-windows-notify
 
 ```yaml
 - id: windows-notify
-  name: dsh-windows-notify
+  name: dsh-desktop-alerts
   config:
     position: bottom-right   # bottom-right | top-right | bottom-left | top-left | center
     durationMs: 12000        # 卡片停留时长（毫秒，3000–120000）

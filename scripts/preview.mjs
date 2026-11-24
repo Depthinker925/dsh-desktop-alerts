@@ -71,7 +71,7 @@ const payload = {
   ...preset,
   title: args.title ?? preset.title,
   body: args.body ?? preset.body,
-  meta: args.meta ?? '预览 · dsh-windows-notify',
+  meta: args.meta ?? '预览 · dsh-desktop-alerts',
   position: args.position ?? 'bottom-right',
   durationMs: Number.parseInt(args.duration ?? '8000', 10),
   sound: args.sound !== 'false',
@@ -91,7 +91,7 @@ if (process.platform !== 'win32') {
   process.exit(1)
 }
 
-const dir = join(tmpdir(), 'dsh-windows-notify')
+const dir = join(tmpdir(), 'dsh-desktop-alerts')
 await mkdir(dir, { recursive: true })
 const payloadPath = join(dir, `preview-${Date.now()}.json`)
 await writeFile(payloadPath, JSON.stringify(payload), 'utf8')

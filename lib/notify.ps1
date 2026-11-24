@@ -1,4 +1,4 @@
-# dsh-windows-notify renderer
+# dsh-desktop-alerts renderer
 #
 # Reads one UTF-8 JSON payload and shows a single always-on-top card in the
 # bottom-right (configurable) corner of the primary screen. The card never

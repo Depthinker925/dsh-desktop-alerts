@@ -1,5 +1,5 @@
 /**
- * dsh-windows-notify — Windows 桌面提醒
+ * dsh-desktop-alerts — Windows 桌面提醒
  *
  * Shows a small always-on-top card in the corner of the screen when DSH needs
  * you: the agent asked a question, a tool call needs a permission decision, or

@@ -24,7 +24,7 @@ import {
 const settings = resolveSettings({ language: 'zh' })
 const zh = stringsFor('zh')
 
-const session = { header: { id: 's1', cwd: 'D:\\work\\dsh-windows-notify' } }
+const session = { header: { id: 's1', cwd: 'D:\\work\\dsh-desktop-alerts' } }
 const agent = { id: 's1', session }
 
 test('settings: defaults survive an empty config', () => {
@@ -85,7 +85,7 @@ test('text: lastMeaningfulLine takes the tail', () => {
 })
 
 test('projectName: last path segment, both separators', () => {
-  assert.equal(projectName('D:\\work\\dsh-windows-notify'), 'dsh-windows-notify')
+  assert.equal(projectName('D:\\work\\dsh-desktop-alerts'), 'dsh-desktop-alerts')
   assert.equal(projectName('/home/depth/project/'), 'project')
   assert.equal(projectName(''), '')
 })
@@ -116,7 +116,7 @@ test('question card: choice title, options preview and project meta', () => {
   assert.equal(card.title, zh.choiceTitle)
   assert.match(card.body, /是否提交到插件市场/)
   assert.match(card.body, /先提 GitHub \/ 同时发 npm/)
-  assert.match(card.meta, /dsh-windows-notify/)
+  assert.match(card.meta, /dsh-desktop-alerts/)
   assert.equal(card.accent, settings.accents.question)
 })
 

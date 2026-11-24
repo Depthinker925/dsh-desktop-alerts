@@ -42,7 +42,7 @@ DSH 需要你的时候，弹一张卡片到屏幕角落。
 
 ```yaml
 - id: windows-notify
-  name: dsh-windows-notify
+  name: dsh-desktop-alerts
   config:
     position: bottom-right
     durationMs: 12000
