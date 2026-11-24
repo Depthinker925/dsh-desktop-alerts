@@ -1,7 +1,7 @@
 {
   "name": "dsh-desktop-alerts",
-  "version": "1.0.0",
-  "description": "Windows desktop cards: get pinged when DSH needs an answer, waits for a permission decision, or finishes a turn.",
+  "version": "1.0.1",
+  "description": "DSH 的 Windows 桌面提醒插件：需要你确认、等待权限、或任务结束时，在屏幕右下角弹一张提醒卡片。",
   "license": "MIT",
   "type": "module",
   "main": "./index.js",
@@ -30,5 +30,15 @@
     "bundle": {
       "patch": "./cordis.patch.yml"
     }
-  }
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "notification",
+    "windows",
+    "reminder",
+    "alert",
+    "toast"
+  ]
 }
