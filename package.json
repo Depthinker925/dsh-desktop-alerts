@@ -1,6 +1,6 @@
 {
   "name": "dsh-desktop-alerts",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Windows desktop cards: get pinged when DSH needs an answer, waits for a permission decision, or finishes a turn.",
   "license": "MIT",
   "type": "module",

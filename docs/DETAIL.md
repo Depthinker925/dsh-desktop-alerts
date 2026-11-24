@@ -44,7 +44,7 @@ DSH 需要你的时候，弹一张卡片到屏幕角落。
 - id: windows-notify
   name: dsh-desktop-alerts
   config:
-    position: bottom-right
+    position: bottom-right      # 默认：统一右下角
     durationMs: 12000
     sound: true
     clickAction: focus

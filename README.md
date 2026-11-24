@@ -41,6 +41,8 @@ dsh plugin --profile web add dsh-desktop-alerts
 | `session/event` → `turn/end` | 回合正常结束 | 任务完成 |
 | `session/event` → `turn/end`（`error`） | 回合因错误结束 | 任务出错 |
 
+所有提醒**统一在屏幕右下角**弹出，多张自动向上堆叠；只有想换到别的角时才需要改 `position`。
+
 子代理（subagent）会话默认**不**提醒，避免一个多代理任务刷屏；需要的话把 `includeSubagents` 打开。
 
 ## 配置
