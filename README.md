@@ -1,18 +1,16 @@
 # dsh-desktop-alerts
 
-[![Listed on dsh-plugin.org](https://dsh-plugin.org/badges/listed.svg)](https://dsh-plugin.org/plugins/depthinker925/dsh-desktop-alerts)
+[![Listed on dsh-plugin.org](https://dsh-plugin.org/badges/listed.svg)](https://dsh-plugin.org/plugins/Depthinker925/dsh-desktop-alerts)
 
-**DeepSeek Harness 的 Windows 桌面提醒插件。** 当 Agent 需要你回答问题、等待权限确认，或者一个回合跑完时，屏幕角落会弹出一张提醒卡片——不用一直盯着 DSH 窗口。点击卡片即可把 DSH 切回前台。
-
-> A Windows desktop-alert plugin for DeepSeek Harness: a corner card when the agent asks a question, waits for a permission decision, or finishes a turn.
+DSH 的 Windows 桌面提醒插件。 当 Agent 需要你回答问题、等待权限确认，或回合结束时，屏幕角落会弹出一张提醒卡片。
 
 ![提醒卡片](docs/preview.png)
 
-## 为什么
+## 开发初衷
 
 长时间任务里，DSH 经常在等你：
 
-- Agent 用 `ask_user_question` 提问，或者在计划审批里等你点「批准」；
+- Agent 用 `ask_user_question` 提问，或者在计划审批里等你点"批准"；
 - 某个工具调用需要权限确认（文件写入、命令执行……）；
 - 一个回合跑完了，结果就在那里，但你正在看别的窗口。
 
@@ -24,11 +22,11 @@ DSH 自己不会把窗口抢到前台，声音提示又很容易被忽略。这�
 dsh plugin --profile web add dsh-desktop-alerts
 ```
 
-也可以：
+或者：
 
 - **插件市场**：DSH 内打开「插件」，在插件中心搜索 `Windows 桌面提醒` 安装；
 - **本地目录**：在「插件」页面选择「从本地目录安装」，指向本仓库根目录（开发时推荐，安装的是软链接，改完代码重启即生效）；
-- **GitHub 直装**：`dsh plugin --profile web add github:depthinker925/dsh-desktop-alerts`。
+- **GitHub 直装**：`dsh plugin --profile web add github:Depthinker925/dsh-desktop-alerts`。
 
 安装后无需重启桌面端即可生效（插件管理会重新加载层）。
 
